@@ -184,6 +184,9 @@ body, html {
 .graph {
 	float: left;
 }
+.graphs-block {
+	float: left;
+}
 .graphs-block, .graphs-main-block {
 	float: left;
 	width: 100%}
@@ -501,6 +504,12 @@ div#cirsm1 {
 	opacity: 1;
 }
 .circle-inner, .circle-inner-inner {
+
+}
+.circle-inner-inner{
+	width: 130px;
+	height: 130px;
+	/*background-color: rgb(74,124,134);*/
 	display: block;
 	position: absolute;
 	top: 0;
@@ -723,6 +732,10 @@ div#cirsm1 {
 .BotAlert .name {
 	font-size: 25px;
 	font-weight: 600;
+	/*-moz-animation: pulse 1.5s infinite ease-in;*/
+	/*-webkit-animation: pulse 1.5s infinite ease-in;*/
+	animation: pulse 1.5s infinite ease-in;
+	box-shadow: 0 0 5px rgb(74,124,134);
 }
 
 
@@ -896,7 +909,7 @@ td {
 }
 .well {
 	display: block;
-	width: 100%;				
+	width: 100%;
 	padding: 10px 0;
 }
 #ex1Slider .slider-selection {
@@ -1029,4 +1042,154 @@ td {
 	border-width: 0 5px 5px;
 	border-bottom-color: #000
 }
-/* End side content */
+
+
+
+
+
+.bot-alert-block {
+	padding-top: 30px;
+	margin:0 -15px;
+}
+
+.bot-graph-block {
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+.bot-graph-block .BotAlert {
+	text-align: center;
+}
+.bot-graph-block .graph {
+	float: none;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.bot-graph-block div#cirsm1 {
+	position: relative;
+
+	transform: translateX(0);
+}
+.BotAlert .name {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.top-scanner {
+  margin: 50px auto;
+  height: 300px;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.intermediate-scanner {
+  height: 250px;
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 50%;
+
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.bottom-scanner {
+  height: 174px;
+  width: 174px;
+  border: 1px solid grey;
+  border-radius: 50%;
+
+  position: relative;
+  top: 38px;
+  left: 38px;
+}
+
+.animation-container {
+  height: 100px;
+  width: 100px;
+  border: 5px solid rgb(74,124,134);
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  top: 75px;
+  left: 75px;
+}
+
+.a-slider {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  left: 100px;
+  top: 25px;
+  transition: all 1s ease;
+}
+
+.a-1 {
+  transform: scale(1);
+  left: 100px;
+  opacity: 0;
+}
+
+.a-2 {
+  transform: scale(2);
+  left: 0px;
+  opacity: 1;
+}
+
+.a-3 {
+  transform: scale(1);
+  left: -100px;
+  opacity: 0;
+}
+
+.a-slider img {
+  top: 125px;
+  left: 0px;
+  width: 80%;
+  height: 80%;
+}
+
+
+.scanner:after {
+  content: '';
+  /* make the element cover the whole thing */
+  display: block;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* and sit in front */
+  z-index: 1;
+  /* gradient with a radar like fade */
+  background:
+    linear-gradient(90deg,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0) 50%,
+    rgba(0,255,0,.5) 55%,
+    rgba(0,255,0,1) 56%,
+    rgba(0,0,0,0) 56%,
+    rgba(0,0,0,0)
+    );
+  /* make it big enough so when we slide it around still covers whole image */
+  background-size:     300% 100%;
+  background-repeat:   no-repeat;
+  /* start with the scan bar just off the left side */
+  background-position: 84% center;
+  -webkit-animation:   scan 1.5s infinite ease;
+}
+
+@-webkit-keyframes scan {
+  /* finish with the scan bar just off the right side */
+  100% { background-position: 25% center; }
+}
+
+.circle-animation-block {
+  background: url('../images/animation-bg-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}

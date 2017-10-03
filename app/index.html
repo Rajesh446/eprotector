@@ -53,17 +53,17 @@
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
-						</li>						
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="player-statistics.html">Player Statistics</a>
 						</li>
-						
+
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<div class="container-fulid card-container">   
+		<div class="container-fulid card-container">
 			<div class="container">
 				<div class="main-dashboard">
 					<div class="row">
@@ -84,9 +84,17 @@
 									<div class="circle-small"></div>
 									<div class="circle-big"></div>
 									<div class="circle-inner-inner"></div>
-									<div class="circle-inner"></div>
+									<!--<div class="circle-inner"></div>-->
+                  <div class="animation-container">
+                    <div class="a-scanner">
+                      <div class="a-slider a-1">
+                        <img src="images/ic_perm_identity_black_24px.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
 								</div>
 							</div>
+
 							<div class="progress-bars-block">
 								<div class="progress">
 									<div class="progress-bar bar1 progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -124,16 +132,16 @@
 											<div class="top-title" ><a href="bot.html">Bot User</div></a>
 											<div class="info">
 												<div class="graph">
-													
-														<div class="cir-with-dot" id="cirsm1" ></div>														
-													
+
+														<div class="cir-with-dot" id="cirsm1" ></div>
+
 												</div>
 												<div class="player-links">
 													<ul>
 														<li><a class="online" href="bot.html">pp_satti99977</a></li>
 														<li><a class="offline" href="bot.html">pp_bardus76</a></li>
 														<li><a class="inactive" href="bot.html">pp_Alex.44</a></li>
-														<li><a class="online" href="bot.html">pp_LP2222</a></li>										
+														<li><a class="online" href="bot.html">pp_LP2222</a></li>
 													</ul>
 													<a href="#" class="more">More in-detail info</a>
 												</div>
@@ -152,14 +160,14 @@
 														<li><a class="offline" href="associations.html">pp_bifbengak</a></li>
 														<li><a class="online" href="associations.html">pp_shikleev</a></li>
 														<li><a class="inactive" href="associations.html">pp_qayxswedc1</a></li>
-														<li><a class="online" href="associations.html">pp_drohiem</a></li>										
+														<li><a class="online" href="associations.html">pp_drohiem</a></li>
 													</ul>
 													<a href="associations.html" class="more">More in-detail info</a>
 												</div>
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -174,7 +182,7 @@
 														<li><a class="inactive" href="bonus.html">pp_aniPP</a></li>
 														<li><a class="online" href="bonus.html">pp_ScreammyVv</a></li>
 														<li><a class="inactive" href="bonus.html">pp_loloki991</a></li>
-														<li><a class="offline" href="bonus.html">pp_babDus</a></li>										
+														<li><a class="offline" href="bonus.html">pp_babDus</a></li>
 													</ul>
 													<a href="bonus.html" class="more">More in-detail info</a>
 												</div>
@@ -193,14 +201,14 @@
 														<li><a class="offline" href="collisions.html">pp_phenomenon_07</a></li>
 														<li><a class="online" href="collisions.html">pp_timek28</a></li>
 														<li><a class="online" href="collisions.html">pp_atorblednam</a></li>
-														<li><a class="inactive" href="collisions.html">pp_lencz</a></li>										
+														<li><a class="inactive" href="collisions.html">pp_lencz</a></li>
 													</ul>
 													<a href="collisions.html" class="more">More in-detail info</a>
 												</div>
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -215,7 +223,7 @@
 														<li><a class="online" href="bonus.html">pp_CarltonBankz</a></li>
 														<li><a class="offline" href="bonus.html">pp_inanune</a></li>
 														<li><a class="online" href="bonus.html">pp_bambam1025</a></li>
-														<li><a class="inactive" href="bonus.html">pp_stafica</a></li>										
+														<li><a class="inactive" href="bonus.html">pp_stafica</a></li>
 													</ul>
 													<a href="bonus.html" class="more">More in-detail info</a>
 												</div>
@@ -234,7 +242,7 @@
 														<li><a class="online" href="rule-violation.html">pp_Mr.G-Power</a></li>
 														<li><a class="online" href="rule-violation.html">pp_D0cZisJim</a></li>
 														<li><a class="inactive" href="rule-violation.html">pp_berendessink</a></li>
-														<li><a class="inactive" href="rule-violation.html">pp_phil__89</a></li>										
+														<li><a class="inactive" href="rule-violation.html">pp_phil__89</a></li>
 													</ul>
 													<a href="rule-violation.html" class="more">More in-detail info</a>
 												</div>
@@ -247,11 +255,12 @@
 						</div>
 					</div>
 				</div>
-			</div>     
+			</div>
 
 
 		</div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 		<script src="https://d3js.org/d3.v4.min.js"></script>
 		<!-- build:js scripts/main.min.js -->
 		<script src="scripts/main.js"></script>
@@ -266,11 +275,11 @@
 			ga('create', 'UA-XXXXX-X', 'auto');
 			ga('send', 'pageview');
 		</script>
-		
-		
+
+
 
 		<!-- Built with love using Web Starter Kit -->
-		
+
 		<script>
 var colors = {
 	'red': '#ff0000',
@@ -285,7 +294,7 @@ var colors = {
 var cirsm1 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
@@ -382,7 +391,7 @@ var progress = startPercent;
 var cirsm2 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
@@ -479,7 +488,7 @@ var progress = startPercent;
 var cirsm3 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
@@ -576,7 +585,7 @@ var progress = startPercent;
 var cirsm4 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
@@ -672,7 +681,7 @@ var progress = startPercent;
 var cirsm5 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
@@ -771,7 +780,7 @@ var progress = startPercent;
 var cirsm6 = function(cssSelector) {
 		var canvas = d3.select(cssSelector)
 var width = 90;
-var height = 90;	
+var height = 90;
 var color = colors.green;
 
 var radius = 41;
