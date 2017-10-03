@@ -388,6 +388,7 @@ div#cirsm1 {
 	text-decoration: none;
 	transition: all .3s ease-in-out;
 	border-right: 1px solid #ccc;
+  z-index: 1;
 }
 .nav-block ul li a img {
 	display: block;
