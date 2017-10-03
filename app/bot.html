@@ -151,7 +151,19 @@
 					<div class="col-md-9">
 						<div class="rightTop">
 							<div class="PlayerName">
-								<p>Player Name:<span> pp_satti99977</span></p>
+								<strong>Player Name:<span> pp_satti99977</span></strong>
+								<span class="mail-id">satti9977@gmail.com</span>
+							</div>
+							<div class="acc-creation">
+								<strong>Account creation date</strong>
+								<span class="date">13/09/17</span>
+							</div>
+							<div class="money-dump">
+								<strong>Money dumping date</strong>
+								<span class="date">10/03/17</span>
+							</div>
+							<div class="poker">
+								<strong>poker</strong>
 							</div>
 						</div>
 						<div class="rightMiddle">
@@ -185,6 +197,22 @@
 									<div class="name">Random Mouse</div>
 									<div class="graph">
 										<div class="ss" id="cirsm4" ></div>
+									</div>
+								</div>
+							</div>
+							<div class="bot-graph-block">
+								<div class="BotAlert">
+									<div class="name">FAB library failures</div>
+									<div class="graph">
+										<div class="ss" id="cirsm5" ></div>
+									</div>
+								</div>
+							</div>
+							<div class="bot-graph-block">
+								<div class="BotAlert">
+									<div class="name">Keyboard hook </div>
+									<div class="graph">
+										<div class="ss" id="cirsm1" ></div>
 									</div>
 								</div>
 							</div>
@@ -637,10 +665,101 @@ Dont Allow... - Investigated on 13-OCT-09
 		}
 		
 		
+		var cirsm5 = function(cssSelector) {
+			var canvas = d3.select(cssSelector)
+			var width = 110;
+			var height = 110;	
+			var color = colors.red;
+
+			var radius = 52;
+			var border = 10;
+			var padding = 2;
+			var startPercent = 0;
+			var endPercent = 0.90;
+
+
+			var twoPi = Math.PI * 2;
+			var formatPercent = d3.format('.0%');
+			var boxSize = (radius + padding) * 2;
+
+
+			var count = Math.abs((endPercent - startPercent) / 0.01);
+			var step = endPercent < startPercent ? -0.01 : 0.01;
+
+			var arc = d3.arc()
+			.startAngle(0)
+			.innerRadius(radius)
+			.outerRadius(radius - border);
+
+			var parent = d3.select('div#cirsm5');
+
+
+			var svg = parent.append('svg')
+			.attr('width', width)
+			.attr('height', height);
+
+			
+
+			var g = svg.append('g')
+			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
+
+			var meter = g.append('g')
+			.attr('class', 'progress-meter');
+
+			meter.append('path')
+				.attr('class', 'background')
+				.attr('fill', '#a9a9a9')
+				.attr('fill-opacity', 0.5)
+				.attr('d', arc.endAngle(twoPi));
+
+			var foreground = meter.append('path')
+			.attr('class', 'foreground')
+			.attr('fill', color)
+			.attr('fill-opacity', 1)
+			.attr('stroke', color)
+			.attr('stroke-width', 2)
+			.attr('stroke-opacity', 1)
+			.attr('filter', 'url(#blur)');
+
+			var front = meter.append('path')
+			.attr('class', 'foreground')
+			.attr('fill', color)
+			.attr('fill-opacity', 1);
+
+			var numberText = svg.append('text')
+			.attr('class', 'text')
+			.attr('transform', 'translate(55,55)')
+			.attr('fill', '#000')
+			.attr('text-anchor', 'middle')
+			.attr('font-size', '22px')
+			.attr('font-weight', '600')
+			.attr('dy', '.35em');
+
+			function updateProgress(progress) {
+				foreground.attr('d', arc.endAngle(twoPi * progress));
+				front.attr('d', arc.endAngle(twoPi * progress));
+				numberText.text(formatPercent(progress));
+			}
+
+			var progress = startPercent;
+
+			(function loops() {
+				updateProgress(progress);
+
+				if (count > 0) {
+					count--;
+					progress += step;
+					setTimeout(loops, 10);
+				}
+			})();
+		}
+		
+		
 		cirsm1('#cirsm1');
 		cirsm2('#cirsm2');
 		cirsm3('#cirsm3');
 		cirsm4('#cirsm4');
+		cirsm5('#cirsm5');
 	</script>
 
 </html>

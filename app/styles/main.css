@@ -267,15 +267,19 @@ body, html {
 }
 .progress-bar.bar2 {
 	animation: width2 ease-in-out 5s infinite;
+	animation-delay: 5s;
 }
 .progress-bar.bar3 {
 	animation: width3 ease-in-out 5s infinite;
+	animation-delay: 10s;
 }
 .progress-bar.bar4 {
 	animation: width4 ease-in-out 5s infinite;
+	animation-delay: 15s;
 }
 .progress-bar.bar5 {
 	animation: width5 ease-in-out 5s infinite;
+	animation-delay: 20s;
 }
 
 
@@ -388,6 +392,7 @@ div#cirsm1 {
 	text-decoration: none;
 	transition: all .3s ease-in-out;
 	border-right: 1px solid #ccc;
+	z-index: 9;
 }
 .nav-block ul li a img {
 	display: block;
@@ -735,7 +740,7 @@ div#cirsm1 {
 	/*-moz-animation: pulse 1.5s infinite ease-in;*/
 	/*-webkit-animation: pulse 1.5s infinite ease-in;*/
 	animation: pulse 1.5s infinite ease-in;
-	box-shadow: 0 0 5px rgb(74,124,134);
+	
 }
 
 
@@ -859,13 +864,42 @@ ul {
 
 
 .rightTop {
+	width: 100%;
+	float: left;
 	background: #efefef;
 	padding: 18px;
 	margin-left: -25px;
 }
+.rightTop strong {
+	display: block;
+    font-size: 16px;
+    line-height: 22px;
+	font-weight: 500;
+}
+.PlayerName {
+	float: left;
+	margin-right: 25px;
+	text-align: left;
+}
+span.mail-id {
+    line-height: 20px;
+}
+.acc-creation, .money-dump, .poker {
+    float: left;
+    margin-right: 25px;
+    text-align: center;
+    padding: 0 20px;
+}
+.acc-creation span, .money-dump span, .poker {
+	line-height: 20px;
+}
 
 .node {
 	cursor: pointer;
+}
+.rightMiddle {
+	width: 100%;
+	float: left;
 }
 
 .node circle {
@@ -1053,7 +1087,7 @@ td {
 }
 
 .bot-graph-block {
-	width: 50%;
+	width: 33%;
 	float: left;
 	padding: 0 15px;
 }
@@ -1070,10 +1104,7 @@ td {
 
 	transform: translateX(0);
 }
-.BotAlert .name {
-	font-size: 30px;
-	font-weight: 600;
-}
+
 
 .top-scanner {
   margin: 50px auto;
@@ -1192,4 +1223,5 @@ td {
   background: url('../images/animation-bg-1.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
