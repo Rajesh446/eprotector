@@ -4,7 +4,7 @@
     <style>
 
     </style>
-    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="styles/main.css">
@@ -15,18 +15,18 @@
 <body>
 	<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">					
+				<a class="navbar-brand" href="index.html">
 					eprotector
 				</a>
 				<div class="navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
-						</li>						
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="player-statistics.html">Player Statistics</a>
 						</li>
-						
+
 					</ul>
 				</div>
 			</div>
@@ -180,7 +180,7 @@
                             <div class="graph">
 										<div class="ss" id="cirsm4" ></div>
 									</div>
-                            
+
                         </div>
 
                     </div>
@@ -428,7 +428,7 @@
             </div>
         </div>
     </div>
-    
+
 <script src="script1.js"></script>
 </body>
 	<script>
@@ -441,7 +441,7 @@
 		var cirsm1 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 140;
-			var height = 140;	
+			var height = 140;
 			var color = colors.green;
 
 			var radius = 68;
@@ -471,7 +471,7 @@
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -529,7 +529,7 @@
 		var cirsm2 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 140;
-			var height = 140;	
+			var height = 140;
 			var color = colors.orange;
 
 			var radius = 68;
@@ -559,7 +559,7 @@
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -614,11 +614,11 @@
 				}
 			})();
 		}
-		
+
 		var cirsm3 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 140;
-			var height = 140;	
+			var height = 140;
 			var color = colors.orange;
 
 			var radius = 68;
@@ -648,7 +648,7 @@
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -703,11 +703,11 @@
 				}
 			})();
 		}
-		
+
 		var cirsm4 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 140;
-			var height = 140;	
+			var height = 140;
 			var color = colors.yellow;
 
 			var radius = 68;
@@ -737,7 +737,7 @@
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -792,7 +792,7 @@
 				}
 			})();
 		}
-		
+
 		cirsm1('#cirsm1');
 		cirsm2('#cirsm2');
 		cirsm3('#cirsm3');
