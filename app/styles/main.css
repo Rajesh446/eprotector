@@ -383,7 +383,7 @@ div#cirsm1 {
 	font-size: 14px;
 	text-align: center;
 	padding: 10px;
-	background: #f6f6f6;   
+	background: #f6f6f6;
 	color: #fff;
 	text-decoration: none;
 	transition: all .3s ease-in-out;
@@ -450,7 +450,7 @@ div#cirsm1 {
 .circle-block {
 	width: 260px;
 	display: inline-block;
-	margin: 45px auto;
+	margin: 56px 147px;
 	position: relative;
 }
 .circle {
@@ -852,7 +852,7 @@ ul {
 	margin: 0 auto;
 	background: white;
 	margin-bottom: 20px;
-	min-height: 220px;				
+	min-height: 220px;
 	float: left;
 	box-shadow: 0 0 6px 4px #ccc;
 }
@@ -889,7 +889,7 @@ ul {
 	margin: 0 auto;
 	padding: 10px;
 	background: white;
-} 			
+}
 
 .table {
 	width: 100%;
@@ -1192,4 +1192,5 @@ td {
   background: url('../images/animation-bg-1.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
 }
