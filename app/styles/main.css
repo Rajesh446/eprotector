@@ -1138,9 +1138,10 @@ td {
 }
 
 .animation-container {
-  height: 100px;
-  width: 100px;
-  border: 5px solid rgb(74,124,134);
+  /*box-sizing: content-box;*/
+  height: 150px;
+  width: 150px;
+  border: 25px solid #F06600;
   overflow: hidden;
   border-radius: 50%;
   position: relative;
@@ -1154,33 +1155,33 @@ td {
   height: 50px;
   opacity: 0;
   left: 100px;
-  top: 25px;
+  top: 2px;
   transition: all 1s ease;
 }
 
 .a-1 {
-  transform: scale(1);
+  transform: scale(0.5);
   left: 100px;
   opacity: 0;
 }
 
 .a-2 {
-  transform: scale(2);
+  transform: scale(1);
   left: 0px;
   opacity: 1;
 }
 
 .a-3 {
-  transform: scale(1);
+  transform: scale(0.5);
   left: -100px;
   opacity: 0;
 }
 
 .a-slider img {
-  top: 125px;
-  left: 0px;
-  width: 80%;
-  height: 80%;
+  /*top: 125px;*/
+  /*left: 0px;*/
+  /*width: 80%;*/
+  /*height: 80%;*/
 }
 
 
@@ -1202,9 +1203,9 @@ td {
     linear-gradient(90deg,
     rgba(0,0,0,0),
     rgba(0,0,0,0) 50%,
-    rgba(0,255,0,.5) 55%,
-    rgba(0,255,0,1) 56%,
-    rgba(0,0,0,0) 56%,
+    rgba(240, 102, 0, 0.5) 55%,
+    rgba(240, 102, 0,1) 60%,
+    rgba(0,0,0,0) 60%,
     rgba(0,0,0,0)
     );
   /* make it big enough so when we slide it around still covers whole image */
@@ -1221,22 +1222,23 @@ td {
 }
 
 .circle-animation-block {
-  background: url('../images/animation-bg-1.png');
+  background: url('../images/animation-bg-5.png');
   background-repeat: no-repeat;
+  /*background: white;*/
   background-position: center;
   background-size: 100%;
 }
 
 .animation {
   position: relative;
-  top: 55px;
-  left: 2px;
+  top: 56px;
+  left: -1px;
 }
 
 .animation-container {
   position: absolute;
-  top: 75px;
-  left: 222px;
+  top: 50px;
+  left: 195px;
   background: white;
 }
 

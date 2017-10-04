@@ -536,24 +536,24 @@ window.$(function() {
     $('.a-slider').removeClass('a-1');
     setTimeout(function() {
       doScan();
-    }, 1000);
+    }, 250);
   }
 
   function doScan() {
-    $('.a-scanner').addClass('scanner');
+    // $('.a-scanner').addClass('scanner');
     setTimeout(function() {
       slideAfterScan();
-    }, 1500);
+    }, 500);
   }
 
   function slideAfterScan() {
-    $('.a-scanner').removeClass('scanner');
+    // $('.a-scanner').removeClass('scanner');
     $('.a-slider').addClass('a-3');
     $('.a-slider').removeClass('a-2');
 
     setTimeout(function() {
       cleanUp();
-    }, 1000);
+    }, 250);
   }
 
   function cleanUp() {
@@ -562,7 +562,7 @@ window.$(function() {
 
     setTimeout(function() {
       slideBeforeScan();
-    }, 1000);
+    }, 250);
   }
 
   setTimeout(function() {
@@ -570,7 +570,7 @@ window.$(function() {
   }, 1000);
 });
 
-(function(d3){
+(function(d3) {
   var width = 480,
     height = 250,
     outerRadius = Math.min(width, height) * .5 - 10,
@@ -581,25 +581,26 @@ window.$(function() {
     data1 = d3.range(n).map(Math.random),
     data;
 
-  var color = d3.scale.category20();
+  // var color = d3.scale.category20();
+  var color = ['#8a8a8a', '#d5d5d5'];
 
   var arc = d3.svg.arc();
 
   var pie = d3.layout.pie()
     .sort(null);
 
-  var svg = d3.select(".animation").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+  var svg = d3.select('.animation').append('svg')
+    .attr('width', width)
+    .attr('height', height);
 
-  svg.selectAll(".arc")
+  svg.selectAll('.arc')
     .data(arcs(data0, data1))
-    .enter().append("g")
-    .attr("class", "arc")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
-    .append("path")
-    .attr("fill", function(d, i) { return color(i); })
-    .attr("d", arc);
+    .enter().append('g')
+    .attr('class', 'arc')
+    .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+    .append('path')
+    .attr('fill', function(d, i) { return color[i % 2]; })
+    .attr('d', arc);
 
   transition(1);
 
@@ -618,13 +619,13 @@ window.$(function() {
   }
 
   function transition(state) {
-    var path = d3.selectAll(".arc > path")
+    var path = d3.selectAll('.arc > path')
       .data(state ? arcs(data0, data1) : arcs(data1, data0));
 
     // Wedges split into two rings.
     var t0 = path.transition()
-      .duration(250)
-      .attrTween("d", tweenArc(function(d, i) {
+      .duration(750)
+      .attrTween('d', tweenArc(function(d, i) {
         return {
           innerRadius: i & 1 ? innerRadius + 30 : (innerRadius + outerRadius) / 2,
           outerRadius: i & 1 ? (innerRadius + outerRadius) / 2 : outerRadius
@@ -633,7 +634,7 @@ window.$(function() {
 
     // Wedges translate to be centered on their final position.
     var t1 = t0.transition()
-      .attrTween("d", tweenArc(function(d, i) {
+      .attrTween('d', tweenArc(function(d, i) {
         var a0 = (d.next.startAngle + d.next.endAngle) + 15,
           a1 = (d.startAngle - d.endAngle);
         return {
@@ -644,7 +645,7 @@ window.$(function() {
 
     // Wedges then update their values, changing size.
     var t2 = t1.transition()
-      .attrTween("d", tweenArc(function(d, i) {
+      .attrTween('d', tweenArc(function(d, i) {
         return {
           startAngle: d.next.startAngle,
           endAngle: d.next.endAngle
@@ -653,14 +654,14 @@ window.$(function() {
 
     // Wedges reunite into a single ring.
     var t3 = t2.transition()
-      .attrTween("d", tweenArc(function(d, i) {
+      .attrTween('d', tweenArc(function(d, i) {
         return {
           innerRadius: innerRadius,
           outerRadius: outerRadius
         };
       }));
 
-    setTimeout(function() { transition(!state); }, 1000);
+    setTimeout(function() { transition(!state); }, 3000);
   }
 
   function tweenArc(b) {
@@ -671,3 +672,41 @@ window.$(function() {
     };
   }
 })(window.d3_3);
+
+// (function(d3) {
+//   var circles = [];
+//   var min = 0;
+//   var max = 4;
+//   var colors = ['grey', 'orange', 'red', 'blue'];
+//
+//   for (var i = 0; i < 100; i++) {
+//     circles.push(colors[(Math.round(Math.random() * (max - min) + min)) % 4]);
+//   }
+//   var svg = d3.select('.circle-animation-block')
+//     .append('svg')
+//     .style('position', 'absolute')
+//     .style('top', '0')
+//     .style('left', '0')
+//     .append('g');
+//   //
+//
+//   console.log(circles);
+//
+//   svg.selectAll('circle')
+//     .data(circles)
+//     .enter()
+//     .append('circle')
+//     .attr('cx', function(d, i) {
+//       return (500 * Math.random() + i * 2);
+//     })
+//     .attr('cy', function(d, i) {
+//       return (400 * Math.random() + i * 2);
+//     })
+//     .attr('r', function() {
+//       return 5;
+//     })
+//     .attr('fill', function(d) {
+//       return d;
+//     });
+//
+// })(window.d3);
