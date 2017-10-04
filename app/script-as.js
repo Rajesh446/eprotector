@@ -15,7 +15,7 @@ var pi = function(cssSelector){
     var pie = d3.layout.pie()
         .value(function (d) { return d; });
     var color = d3.scale.ordinal()
-        .range(["#fff","#ffcc00","#333"]);
+        .range(["#808080","#ffcc00","#333"]);
     var arcs = group.selectAll("arc")
         .data(pie(data))
         .enter()
