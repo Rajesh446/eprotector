@@ -530,43 +530,37 @@
 })();
 
 window.$(function() {
-  function slideBeforeScan() {
-    $('.a-slider').addClass('a-2');
-    $('.a-slider').removeClass('a-3');
-    $('.a-slider').removeClass('a-1');
-    setTimeout(function() {
-      doScan();
-    }, 250);
-  }
 
-  function doScan() {
-    // $('.a-scanner').addClass('scanner');
-    setTimeout(function() {
-      slideAfterScan();
-    }, 500);
-  }
+  var slider_one_focus = true;
+  var slider_two_focus = false;
+  var slide_count = 0;
 
-  function slideAfterScan() {
-    // $('.a-scanner').removeClass('scanner');
-    $('.a-slider').addClass('a-3');
-    $('.a-slider').removeClass('a-2');
-
-    setTimeout(function() {
-      cleanUp();
-    }, 250);
-  }
-
-  function cleanUp() {
-    $('.a-slider').removeClass('a-3');
-    $('.a-slider').addClass('a-1');
+  function startAnimation() {
+    if(slider_two_focus) {
+      slider_two_focus = false;
+      $('.a-slider').show();
+    }
+    if (slider_one_focus) {
+      $('.a-slider').animate({
+        left: '-=100'
+      }, 250, function() {
+        slide_count++;
+        console.log('Slider one:' + slide_count);
+        if (slide_count === 3) {
+          $('.a-slider').hide().css({'left' : 0 + 'px'});
+          slide_count = 0;
+          slider_two_focus = true;
+        }
+      });
+    }
 
     setTimeout(function() {
-      slideBeforeScan();
-    }, 250);
+      startAnimation();
+    }, 1000);
   }
 
   setTimeout(function() {
-    slideBeforeScan();
+    startAnimation();
   }, 1000);
 });
 
