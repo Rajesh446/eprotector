@@ -1227,6 +1227,7 @@ td {
   /*background: white;*/
   background-position: center;
   background-size: 100%;
+  overflow: hidden;
 }
 
 .animation {
