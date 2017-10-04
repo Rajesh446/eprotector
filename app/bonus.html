@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="asscociation.css">
 
 
 
@@ -67,25 +68,35 @@
 				transition: width 0.4s ease-in-out;
 			}
 
-			
-
-			
-			
-
-			
-			
-
-			
-
-			
-
-
-			
-
-			
+			.graphs-block .toolTip {
+				position: absolute;
+				display: block;
+				min-width: 80px;
+				height: auto;
+				background: none repeat scroll 0 0 #ffffff;
+				border: 1px solid #6F257F;
+				padding: 14px;
+				text-align: center;
+				opacity: 1 !important;
+			}
 
 
-			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</style>
 	</head>
 
@@ -111,7 +122,7 @@
 		<div class="container-fluid">
 			<div class="mainContainer">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-3">
 						<div class="top">
 							<div class="search">
 								<label>search</label>
@@ -216,7 +227,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-8">
+					<div class="col-md-6">
 						<div class="rightTop">
 							<div class="PlayerName">
 								<p>Player Name: pp_CarltonBankz</p>
@@ -257,6 +268,167 @@
 
 						</div>
 					</div>
+					<div class="col-md-3">
+						<div class="widgets">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="bottomRight">
+										<div class="header">
+											<span class="statistics"> Statistics</span>
+											<span class="date">Last 30 Days</span>
+										</div>
+										<div class="middleBottomRight">
+											<div class="handsPlayed">
+												<span>Hands played</span>
+											</div>
+											<div class="statisticGraph">
+												<div class="statistic-alert">
+													<svg id="doNut1" width="130" height="130"></svg>
+													<script src="script-as.js"></script>
+												</div>
+												<div class="count">
+													<span>20</span>
+													<div class="gameType">
+														<ul>
+															<li class="cashGame">
+																Cash Game
+															</li>
+															<li class="sit">
+																Sit & Go
+															</li>
+															<li class="tournament">
+																Tournament
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="middleBottomBottom">
+											<div class="bestHand">
+												<span>
+													Best Hand
+												</span>
+											</div>
+											<div class="cardsdisplay">
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+											</div>
+											<div class="cardType">
+												<span>pair</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="bottomRightFinance">
+										<div class="financeheader">
+											<a href="player-statistics.html"> <span>FinancialInfo</span></a>
+										</div>
+										<div class="values">
+											<div class="loading spin-1" data-text='TotalcashOut $1503.50'>
+												<!-- <span class="checkout">TotalcashOut<br>$1503.50</span> -->
+												<div class="loading spin-2" data-text='TotalDepositAmt $1423.50'>
+													<!-- <span class="deposite">TotalDepositAmt<br>$1503.50</span> -->
+													<div class="loading spin-3" data-text='TotalRakeAmt $503.50'>
+														<!-- <span class="rake">TotalRakeAmt<br>$1503.50</span> -->
+														<div class="loading spin-4" data-text='TotalwinAmt $150.50'>
+															<!-- <span class="win">TotalwinAmt<br>$1503.50</span> -->
+															<div class="loading spin-5" data-text='TotalBetAmt $103.50'>
+																<div class="loading spin-6" data-text='AccountBal $153.50'>
+																	<!-- <span class="total">account Bal<br>$1653.50</span> -->
+																</div>
+																<span class="Bet">TotalAccountBal<br>$153.50</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="personalInfo">
+										<div class="personalHeader">
+											<span>Personal Info</span>
+										</div>
+										<div class="channel">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="table">
+														<table class="FinanceInfo">
+															<tr>
+																<th>
+																	IPInfo
+																</th>
+																<th>
+																	Channel
+																</th>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	AR
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	Mac
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -273,7 +445,7 @@
 
 			// set the dimensions and margins of the graph
 			var margin = {top: 20, right: 20, bottom: 30, left: 40},
-				width = 410 - margin.left - margin.right,
+				width = 310 - margin.left - margin.right,
 				height = 300 - margin.top - margin.bottom;
 
 			// set the ranges
@@ -293,6 +465,7 @@
 			.append("g")
 			.attr("transform", 
 				  "translate(" + margin.left + "," + margin.top + ")");
+			
 
 			// format the data
 			data.forEach(function(d) {
@@ -305,14 +478,18 @@
 			//y.domain([0, d3.max(data, function(d) { return d.sales; })]);
 
 			// append the rectangles for the bar chart
-			svg.selectAll(".bar")
+			var bars = svg.selectAll(".bar")
 				.data(data)
 				.enter().append("rect")
 				.attr("class", "bar")
 			//.attr("x", function(d) { return x(d.sales); })
-				.attr("width", function(d) {return x(d.sales); } )
+				.attr("width", 0 )
 				.attr("y", function(d) { return y(d.salesperson); })
-				.attr("height", y.bandwidth());
+				.attr("height", y.bandwidth())
+				
+			bars.transition()
+				.duration(2000)
+				.attr("width", function(d) {return x(d.sales); } );
 
 			// add the x Axis
 			svg.append("g")
@@ -323,7 +500,7 @@
 			svg.append("g")
 				.call(d3.axisLeft(y));
 
-
+			
 		</script>	
 		<script>
 			var data = [{"salesperson":"Karen","sales":21},
@@ -337,7 +514,7 @@
 
 			// set the dimensions and margins of the graph
 			var margin = {top: 20, right: 20, bottom: 30, left: 40},
-				width = 410 - margin.left - margin.right,
+				width = 310 - margin.left - margin.right,
 				height = 300 - margin.top - margin.bottom;
 
 			// set the ranges
@@ -392,16 +569,16 @@
 		</script>
 		<script>
 			var data = [{"salesperson":"Karen","sales":21},
-			{"salesperson":"Kirsty","sales":25},
-			{"salesperson":"Chris","sales":30},
-			{"salesperson":"Lisa","sales":47},
-			{"salesperson":"Tom","sales":5},
-			{"salesperson":"Stacy","sales":20},
-			{"salesperson":"Charles","sales":13}];
+						{"salesperson":"Kirsty","sales":25},
+						{"salesperson":"Chris","sales":30},
+						{"salesperson":"Lisa","sales":47},
+						{"salesperson":"Tom","sales":5},
+						{"salesperson":"Stacy","sales":20},
+						{"salesperson":"Charles","sales":13}];
 
 			// set the dimensions and margins of the graph
 			var margin = {top: 20, right: 20, bottom: 30, left: 40},
-				width = 410 - margin.left - margin.right,
+				width = 310 - margin.left - margin.right,
 				height = 300 - margin.top - margin.bottom;
 
 			// set the ranges
@@ -454,19 +631,19 @@
 
 
 		</script>
-		
+
 		<script>
 			var data = [{"salesperson":"Mark","sales":16},
-			{"salesperson":"Joe","sales":59},
-			{"salesperson":"Eve","sales":38},
-			{"salesperson":"Karen","sales":21},
-			{"salesperson":"Kirsty","sales":25},
-			{"salesperson":"Chris","sales":30},
-			{"salesperson":"Lisa","sales":47}];
+						{"salesperson":"Joe","sales":59},
+						{"salesperson":"Eve","sales":38},
+						{"salesperson":"Karen","sales":21},
+						{"salesperson":"Kirsty","sales":25},
+						{"salesperson":"Chris","sales":30},
+						{"salesperson":"Lisa","sales":47}];
 
 			// set the dimensions and margins of the graph
 			var margin = {top: 20, right: 20, bottom: 30, left: 40},
-				width = 410 - margin.left - margin.right,
+				width = 310 - margin.left - margin.right,
 				height = 300 - margin.top - margin.bottom;
 
 			// set the ranges
@@ -519,8 +696,8 @@
 
 
 		</script>
-		
-		
+
+
 
 		<script type="text/javascript">
 			$(".graphs-main-block").hide();

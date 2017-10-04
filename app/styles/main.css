@@ -614,7 +614,7 @@ div#cirsm1 {
 	background-image: none;
 	top: 4px;
 }
-.tooltip {
+.slider .tooltip {
 	position: absolute;
 	z-index: 1070;
 	display: block;
@@ -735,7 +735,7 @@ div#cirsm1 {
 	transform: translateX(0);
 }
 .BotAlert .name {
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 600;
 	/*-moz-animation: pulse 1.5s infinite ease-in;*/
 	/*-webkit-animation: pulse 1.5s infinite ease-in;*/
@@ -852,8 +852,7 @@ ul {
 }
 .BotAlert {
 	border: 1px solid #a7a3a3;
-	width: 100%;
-	height: 30%;
+	width: 100%;	
 	padding: 20px;
 	margin: 0 auto;
 	background: white;
@@ -887,9 +886,9 @@ span.mail-id {
 }
 .acc-creation, .money-dump, .poker {
     float: left;
-    margin-right: 25px;
+    margin-right: 6px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .acc-creation span, .money-dump span, .poker {
 	line-height: 20px;
@@ -964,7 +963,7 @@ td {
 	background-image: none;
 	top: 4px;
 }
-.tooltip {
+.slider .tooltip {
 	position: absolute;
 	z-index: 1070;
 	display: block;
@@ -1088,10 +1087,20 @@ td {
 }
 
 .bot-graph-block {
-	width: 33%;
+	width: 33.33%;
 	float: left;
 	padding: 0 15px;
 }
+.bot-graph-block.bot-graph-block-50 {
+	width: 50%;
+}
+.bot-graph-block.bot-graph-block-50 .graph {
+	padding-top: 10px;
+}
+.bot-graph-block.bot-graph-block-50 .BotAlert {
+	padding: 0;
+}
+
 .bot-graph-block .BotAlert {
 	text-align: center;
 }

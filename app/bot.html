@@ -16,9 +16,13 @@
 				crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>
 		<script src="http://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" href="asscociation.css">
 		<!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
 		<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-		
+	<style>
+		.bar { fill: steelblue; }
+		.bar2 {fill: #e6550d;}
+	</style>
 	</head>
 
 	<body>
@@ -35,7 +39,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="player-statistics.html">Player Statistics</a>
 						</li>
-						
+
 					</ul>
 				</div>
 			</div>
@@ -81,7 +85,7 @@
 									Keyboard hook 
 								</label>
 							</div>
-							
+
 							<div class="form-check">
 								<label class="form-check-label">
 									<input class="form-check-input" type="checkbox" value="" >
@@ -94,75 +98,75 @@
 									Captcha
 								</label>
 							</div>
-							
-							
-<!--
-							<div class="well">
-								<label>Filter option</label>
-								<input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-							</div>
+
+
+							<!--
+<div class="well">
+<label>Filter option</label>
+<input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+</div>
 -->
 						</div>
 						<div class="bottom">
-                            <ul>
-                                <li>
-                                    <a class="player" href="#">pp_satti99977<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-    
-                                </li>
-                                
-                                <li>
-                                    <a href="#">pp_bardus76<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_Alex.44<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_LP2222<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_bifbenga<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_shikleev<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_qayxswedc1<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_drohiem<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_aniPP<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_ScreammyVvv<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_loloki991<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_babDus<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_phenomenon_07<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_timek28<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_atorblednam<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_lencz<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                                <li>
-                                    <a href="#">pp_bambam1025<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
+							<ul>
+								<li>
+									<a class="player" href="#">pp_satti99977<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+
+								</li>
+
+								<li>
+									<a href="#">pp_bardus76<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_Alex.44<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_LP2222<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_bifbenga<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_shikleev<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_qayxswedc1<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_drohiem<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_aniPP<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_ScreammyVvv<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_loloki991<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_babDus<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_phenomenon_07<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_timek28<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_atorblednam<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_lencz<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+								<li>
+									<a href="#">pp_bambam1025<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+								</li>
+							</ul>
+						</div>
 					</div>
 
-					<div class="col-md-9">
+					<div class="col-md-6">
 						<div class="rightTop">
 							<div class="PlayerName">
 								<strong>Player Name:<span> pp_satti99977</span></strong>
@@ -173,7 +177,7 @@
 								<span class="date">13/09/17</span>
 							</div>
 							<div class="money-dump">
-								<strong>Money dumping date</strong>
+								<strong>RMC Date</strong>
 								<span class="date">10/03/17</span>
 							</div>
 							<div class="poker">
@@ -182,55 +186,72 @@
 						</div>
 						<div class="rightMiddle">
 							<div class="bot-alert-block">
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">Captcha</div>
-									<div class="graph">
-										<div class="ss" id="cirsm1" ></div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">Fishy Process</div>
+										<div class="graph">
+											<div class="ss" id="cirsm1" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">FAB library failures</div>
+										<div class="graph">
+											<div class="ss" id="cirsm2" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">Stealth </div>
+										<div class="graph">
+											<div class="ss" id="cirsm3" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">Keyboard hook</div>
+										<div class="graph">
+											<div class="ss" id="cirsm4" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">Random Mouse </div>
+										<div class="graph">
+											<div class="ss" id="cirsm5" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block">
+									<div class="BotAlert">
+										<div class="name">Captcha </div>
+										<div class="graph">
+											<div class="ss" id="cirsm6" ></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block bot-graph-block-50">
+									<div class="BotAlert">
+										<div class="name">stake </div>
+										<div class="graph">
+											<div id="stake"></div>
+										</div>
+									</div>
+								</div>
+								<div class="bot-graph-block bot-graph-block-50">
+									<div class="BotAlert">
+										<div class="name">session </div>
+										<div class="graph">
+											<div id="session"></div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">Stealth</div>
-									<div class="graph">
-										<div class="ss" id="cirsm2" ></div>
-									</div>
-								</div>
-							</div>
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">Fishy Process</div>
-									<div class="graph">
-										<div class="ss" id="cirsm3" ></div>
-									</div>
-								</div>
-							</div>
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">Random Mouse</div>
-									<div class="graph">
-										<div class="ss" id="cirsm4" ></div>
-									</div>
-								</div>
-							</div>
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">FAB library failures</div>
-									<div class="graph">
-										<div class="ss" id="cirsm5" ></div>
-									</div>
-								</div>
-							</div>
-							<div class="bot-graph-block">
-								<div class="BotAlert">
-									<div class="name">Keyboard hook </div>
-									<div class="graph">
-										<div class="ss" id="cirsm6" ></div>
-									</div>
-								</div>
-							</div>
-							</div>
+
 							<script src="script1.js"></script>
 							<!-- <div class="table">
 <div class="individualPlayer">
@@ -285,6 +306,167 @@ Dont Allow... - Investigated on 13-OCT-09
 </div> -->
 						</div>
 					</div>
+					<div class="col-md-3">
+						<div class="widgets">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="bottomRight">
+										<div class="header">
+											<span class="statistics"> Statistics</span>
+											<span class="date">Last 30 Days</span>
+										</div>
+										<div class="middleBottomRight">
+											<div class="handsPlayed">
+												<span>Hands played</span>
+											</div>
+											<div class="statisticGraph">
+												<div class="statistic-alert">
+													<svg id="doNut1" width="130" height="130"></svg>
+													<script src="script-as.js"></script>
+												</div>
+												<div class="count">
+													<span>20</span>
+													<div class="gameType">
+														<ul>
+															<li class="cashGame">
+																Cash Game
+															</li>
+															<li class="sit">
+																Sit & Go
+															</li>
+															<li class="tournament">
+																Tournament
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="middleBottomBottom">
+											<div class="bestHand">
+												<span>
+													Best Hand
+												</span>
+											</div>
+											<div class="cardsdisplay">
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+												<div class="cards">
+												</div>
+											</div>
+											<div class="cardType">
+												<span>pair</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="bottomRightFinance">
+										<div class="financeheader">
+											<a href="player-statistics.html"> <span>FinancialInfo</span></a>
+										</div>
+										<div class="values">
+											<div class="loading spin-1" data-text='TotalcashOut $1503.50'>
+												<!-- <span class="checkout">TotalcashOut<br>$1503.50</span> -->
+												<div class="loading spin-2" data-text='TotalDepositAmt $1423.50'>
+													<!-- <span class="deposite">TotalDepositAmt<br>$1503.50</span> -->
+													<div class="loading spin-3" data-text='TotalRakeAmt $503.50'>
+														<!-- <span class="rake">TotalRakeAmt<br>$1503.50</span> -->
+														<div class="loading spin-4" data-text='TotalwinAmt $150.50'>
+															<!-- <span class="win">TotalwinAmt<br>$1503.50</span> -->
+															<div class="loading spin-5" data-text='TotalBetAmt $103.50'>
+																<div class="loading spin-6" data-text='AccountBal $153.50'>
+																	<!-- <span class="total">account Bal<br>$1653.50</span> -->
+																</div>
+																<span class="Bet">TotalAccountBal<br>$153.50</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="personalInfo">
+										<div class="personalHeader">
+											<span>Personal Info</span>
+										</div>
+										<div class="channel">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="table">
+														<table class="FinanceInfo">
+															<tr>
+																<th>
+																	IPInfo
+																</th>
+																<th>
+																	Channel
+																</th>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	AR
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	Mac
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	10.153.251.43
+																</td>
+																<td>
+																	VC
+																</td>
+															</tr>
+
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -313,6 +495,140 @@ Dont Allow... - Investigated on 13-OCT-09
 			$("#tree").show();
 
 		});
+
+	</script>
+	<script>
+		var data = [{"salesperson":"Bob","sales":21},
+					{"salesperson":"Robin","sales":25},
+					{"salesperson":"Anne","sales":30},
+					{"salesperson":"Mark","sales":47},
+					{"salesperson":"Joe","sales":5},
+					{"salesperson":"Stacy","sales":20},
+
+					{"salesperson":"Karen","sales":29}];
+		// set the dimensions and margins of the graph
+		var margin = {top: 20, right: 20, bottom: 30, left: 40},
+			width = 300 - margin.left - margin.right,
+			height = 300 - margin.top - margin.bottom;
+
+		// set the ranges
+		var x = d3.scaleBand()
+		.range([0, width])
+		.padding(0.1);
+		var y = d3.scaleLinear()
+		.range([height, 0]);
+
+		// append the svg object to the body of the page
+		// append a 'group' element to 'svg'
+		// moves the 'group' element to the top left margin
+		var svg = d3.select("#stake").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", 
+			  "translate(" + margin.left + "," + margin.top + ")");
+
+		// get the data
+
+
+		// format the data
+		data.forEach(function(d) {
+			d.sales = +d.sales;
+		});
+
+		// Scale the range of the data in the domains
+		x.domain(data.map(function(d) { return d.salesperson; }));
+		y.domain([0, d3.max(data, function(d) { return d.sales; })]);
+
+		// append the rectangles for the bar chart
+		var bars = svg.selectAll(".bar")
+			.data(data)
+			.enter().append("rect")
+			.attr("class", "bar")
+			.attr("x", function(d) { return x(d.salesperson); })
+			.attr("width", x.bandwidth())
+			.attr("y", function(d) { return y(d.sales); })
+			.attr("height", 0);
+		
+		bars.transition()
+				.duration(2000)
+				.attr("height", function(d) { return height - y(d.sales); });
+
+		// add the x Axis
+		svg.append("g")
+			.attr("transform", "translate(0," + height + ")")
+			.call(d3.axisBottom(x));
+
+		// add the y Axis
+		svg.append("g")
+			.call(d3.axisLeft(y));
+
+
+
+	</script>
+	<script>
+		var data = [{"salesperson":"Bob","sales":40},
+					{"salesperson":"Robin","sales":67},
+					{"salesperson":"Anne","sales":10},
+					{"salesperson":"Mark","sales":37},
+					{"salesperson":"Joe","sales":12},
+					{"salesperson":"Stacy","sales":50},
+
+					{"salesperson":"Karen","sales":87}];
+		// set the dimensions and margins of the graph
+		var margin = {top: 20, right: 20, bottom: 30, left: 40},
+			width = 300 - margin.left - margin.right,
+			height = 300 - margin.top - margin.bottom;
+
+		// set the ranges
+		var x = d3.scaleBand()
+		.range([0, width])
+		.padding(0.1);
+		var y = d3.scaleLinear()
+		.range([height, 0]);
+
+		// append the svg object to the body of the page
+		// append a 'group' element to 'svg'
+		// moves the 'group' element to the top left margin
+		var svg = d3.select("#session").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", 
+			  "translate(" + margin.left + "," + margin.top + ")");
+
+		// get the data
+
+
+		// format the data
+		data.forEach(function(d) {
+			d.sales = +d.sales;
+		});
+
+		// Scale the range of the data in the domains
+		x.domain(data.map(function(d) { return d.salesperson; }));
+		y.domain([0, d3.max(data, function(d) { return d.sales; })]);
+
+		// append the rectangles for the bar chart
+		svg.selectAll(".bar2")
+			.data(data)
+			.enter().append("rect")
+			.attr("class", "bar2")
+			.attr("x", function(d) { return x(d.salesperson); })
+			.attr("width", x.bandwidth())
+			.attr("y", function(d) { return y(d.sales); })
+			.attr("height", function(d) { return height - y(d.sales); });
+
+		// add the x Axis
+		svg.append("g")
+			.attr("transform", "translate(0," + height + ")")
+			.call(d3.axisBottom(x));
+
+		// add the y Axis
+		svg.append("g")
+			.call(d3.axisLeft(y));
+
+
 
 	</script>
 	<script>
@@ -355,7 +671,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -410,7 +726,7 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
+
 		var cirsm2 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 110;
@@ -444,7 +760,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -499,7 +815,7 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
+
 		var cirsm3 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 110;
@@ -533,7 +849,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -588,7 +904,7 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
+
 		var cirsm4 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 110;
@@ -622,7 +938,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -677,8 +993,8 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
-		
+
+
 		var cirsm5 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 110;
@@ -712,7 +1028,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -767,7 +1083,7 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
+
 		var cirsm6 = function(cssSelector) {
 			var canvas = d3.select(cssSelector)
 			var width = 110;
@@ -801,7 +1117,7 @@ Dont Allow... - Investigated on 13-OCT-09
 			.attr('width', width)
 			.attr('height', height);
 
-			
+
 
 			var g = svg.append('g')
 			.attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
@@ -856,8 +1172,8 @@ Dont Allow... - Investigated on 13-OCT-09
 				}
 			})();
 		}
-		
-		
+
+
 		cirsm1('#cirsm1');
 		cirsm2('#cirsm2');
 		cirsm3('#cirsm3');

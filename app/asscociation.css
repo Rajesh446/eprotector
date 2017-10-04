@@ -1,48 +1,5 @@
 
 
-.mainContainer {
-    width: 85%;
-    margin: 80px auto;
-    padding: 20px;
-    background: #dedede;
-}
-
-.container-fluid {
-    background: #f7f8f9;
-    HEIGHT: 100%;
-}
-
-.col-md-4 {
-    display: inline-block;
-}
-
-.top {
-    padding: 20px;
-    background: #efefef;
-}
-
-.middle {
-    padding: 20px;
-    background: #f6f6f6;
-    display: block;
-}
-
-.filter {
-    line-height: 1.5em;
-}
-
-i.fa.fa-filter {
-    float: right;
-    line-height: 1.5em;
-    padding-right: 10px;
-}
-
-.form-check {
-    margin-top: 10px;
-    display: inline-block;
-    padding-right: 10px;
-    /* float: left; */
-}
 /* .slider #ex8Slider .slider-selection {
             background: #BABABA;
         }
@@ -55,81 +12,18 @@ i.fa.fa-filter {
             font-weight: bold;
         } */
 
-.bottom {
-    margin-top: 10px;
-    width: 100%;
-    background: #cbcbcb;
-    padding-top: 5px;
-    height: 550px;
-    overflow-y: scroll;
-}
 
-ul {
-    /* text-align: center; */
-    text-decoration: none;
-    list-style-type: none;
-    padding: 0;
-}
 
-.bottom li a {
-    display: block;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 2px;
-    background: white
-    /* margin: 0 auto; */
-    /* background: white; */
-}
 
-.bottom a {
-    /* text-align: center; */
-    color: black;
-    /* background: white; */
-}
-
-.bottom a i.fa.fa-angle-right {
-    float: right;
-    line-height: 1.2em;
-    font-size: 25px;
-    padding-right: 10px;
-}
-
-.rightTop {
-    background: #efefef;
-    padding: 15px;
-    margin-left: -25px;
-    display: inline-block;
-    width: 100%
-}
-
-.node {
-    cursor: pointer;
-}
-
-.node circle {
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-}
-
-.node text {
-    font: 10px sans-serif;
-}
-
-.link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1.5px;
-}
-
-.bottomRight {
+.widgets .bottomRight {
     width: 100%;
     margin-bottom: 5px;
     /* margin: 10px; */
     display: block;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     float: left;
     background: white;
+	box-shadow: 0 0 3px 2px #ccc;
 }
 
 .individualPlayer {
@@ -139,27 +33,24 @@ ul {
     background: white;
 }
 
-body {
-    background: #f7f8f9;
-}
 
-.table {
-    padding-top: 10px;
-    width: 100%;
-    margin: 0 auto;
+
+
+
+
+.widgets .header {
+	width: 100%;
+	float: left;
     display: block;
+    border-bottom: 1px solid darkgray;
+	padding: 5px 10px;
+	box-shadow: 0 4px 4px -2px #ccc;
 }
-
-table {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-.header {
-    display: block;
-    border-bottom: 1px solid black;
-    margin: 5px;
+.widgets .header span {
+	display: block;
+	font-size: 16px;
+	line-height: 25px;
+	float: left;
 }
 
 .widgets .bottomRight span.date {
@@ -171,28 +62,45 @@ table {
 
 .widgets .bottomRight span.statistics {
     color: Black;
-    font-family: aerial;
+    font-size: 20px;
+	font-weight: 600;
+	
 }
 /* .bottomRight .middleBottomRight {
             margin: 5px;
             display: block;
             float: left;
         } */
-
+.widgets .bottomRight .handsPlayed {
+	margin-bottom: 8px;
+}
+.widgets .bottomRight .handsPlayed span {
+	font-size: 16px;
+	font-weight: 600;
+}
 .widgets .bottomRight .middleBottomRight {
-    padding: 5px;
+    padding: 5px 10px;
     width: 100%;
     float: left;
+	margin-top: 15px;
+	text-align: center;
 }
-
-.widgets .bottomRight .middleBottomRight .statisticGraph .botAlert {
-    width: 50%;
-    float: left;
+.widgets .bottomRight .middleBottomRight .statisticGraph {
+    margin: 0 auto;
+}
+.widgets .bottomRight .middleBottomRight .statisticGraph .statistic-alert {
+    width: 38%;
+    float: none;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .widgets .bottomRight .middleBottomRight .statisticGraph .count {
-    width: 50%;
-    float: right;
+    width: 46%;
+    float: none;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
 }
 
 .widgets .bottomRight .middleBottomRight .statisticGraph .count span {
@@ -209,7 +117,7 @@ table {
     display: inline-block;
 }
 
-.bottomRight .middleBottomRight .statisticGraph .count .gameType li.sit::before {
+.widgets .bottomRight .middleBottomRight .statisticGraph .count .gameType li.sit::before {
     content: "";
     height: 10px;
     background: #ffcc00;
@@ -217,7 +125,7 @@ table {
     display: inline-block;
 }
 
-.bottomRight .middleBottomRight .statisticGraph .count .gameType li.tournament::before {
+.widgets .bottomRight .middleBottomRight .statisticGraph .count .gameType li.tournament::before {
     content: "";
     height: 10px;
     background: #333;
@@ -225,23 +133,26 @@ table {
     display: inline-block;
 }
 
-.bottomRight .middleBottomBottom {
+.widgets .bottomRight .middleBottomBottom {
     width: 100%;
     float: left;
     padding: 10px;
 }
+.widgets .bottomRight .middleBottomBottom .bestHand span {
+	font-weight: 600;
+}
 
-.bottomRight .middleBottomBottom .cardsdisplay.cards {
+.widgets .bottomRight .middleBottomBottom .cardsdisplay .cards {
     width: 25px;
     height: 40px;
     background: gray;
-    border-radius: 5px;
+    border-radius: 3px;
     float: left;
     margin-right: 5px;
-    margin-top: 10px;
+    
 }
 
-.widgets .bottomRight .middleBottomBottom .cardsdisplay {
+.widgets .middleBottomBottom .cardsdisplay {
     width: 100%;
     float: left;
     margin: 5px;
@@ -255,29 +166,40 @@ table {
     display: inline-block;
     margin-right: 5px;
 }
-
-.bottomRightFinance {
-    width: 100%;
-    margin-bottom: 5px;
-    /* margin: 10px; */
+.widgets .middleBottomBottom .cardType span {
+	display: block;
+	font-weight: 500;
+	margin-top: 5px;
+}
+.widgets .bottomRightFinance {
+    width: 100%;    
     display: block;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     float: left;
     background: white;
+	box-shadow: 0 0 3px 2px #ccc;
 }
 
 .financeheader {
+        width: 100%;
+    float: left;
     display: block;
-    border-bottom: 1px solid black;
-    margin: 5px;
-    text-align: center;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 10px;
+    box-shadow: 0 4px 4px -2px #ccc;
 }
-
-.values {
+.financeheader a {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 10px;
+	line-height: 25px;
+}
+.bottomRightFinance .values {
     padding: 24px;
-    transform: translate(-15%, -5%);
-    top: 50%;
-    left: 50%;
+    transform: translate(-10%, -5%);
+    top: 0;
+    left: 0;
+	margin-top: 0;
 }
 
 .loading {
@@ -441,16 +363,34 @@ table {
     width: 100%;
     /* margin: 10px; */
     display: block;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     float: left;
     background: white;
+	box-shadow: 0 0 3px 2px #ccc;
 }
 
 .personalHeader {
+   width: 100%;
+    float: left;
     display: block;
-    border-bottom: 1px solid black;
-    margin: 5px;
-    text-align: center;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 10px;
+    box-shadow: 0 4px 4px -2px #ccc;
+	text-align: center;
+}
+.personalHeader span {
+	display: block;
+	font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 25px;
+}
+.personalInfo .channel {
+    width: 100%;
+    float: left;
+}
+.personalInfo .channel .table th {
+	border-top: none;
 }
 
 .brand {
@@ -468,10 +408,7 @@ table {
     padding-right: 20px;
 }
 
-.PlayerName {
-    float: left;
-    padding-right: 20px;
-}
+
 
 
 td {

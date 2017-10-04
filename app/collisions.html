@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="asscociation.css">
 
 
 
@@ -20,188 +21,7 @@
 		<script src="https://d3js.org/d3.v3.min.js"></script>
 		<!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
 		<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-		<style>
-			.top input[type=text] {
-				width: 80%;
-				box-sizing: border-box;
-				border: 2px solid #ccc;
-				border-radius: 4px;
-				font-size: 16px;
-				background-color: white;
-				/* background-image: url('searchicon.png'); */
-				background-position: 10px 10px;
-				background-repeat: no-repeat;
-				/* padding: 12px 20px 12px 40px; */
-				-webkit-transition: width 0.4s ease-in-out;
-				transition: width 0.4s ease-in-out;
-			}
-			.BotAlert span {
-            font-weight: bold;
-            text-align: center;
-        }
-
-			.mainContainer {
-				width: 80%;
-				margin: 80px auto;
-				padding: 20px;
-				background: #dedede;
-			}
-
-			.container-fluid {
-				background: #f7f8f9;
-				HEIGHT: 100%;
-			}
-
-			.col-md-4 {
-				display: inline-block;
-			}
-
-			.top {
-				padding: 20px;
-				background: #efefef;
-			}
-
-			.middle {
-				padding: 20px;
-				background: #f6f6f6;
-				display: block;
-			}
-
-			.filter {
-				line-height: 1.5em;
-			}
-
-			i.fa.fa-filter {
-				float: right;
-				line-height: 1.5em;
-				padding-right: 10px;
-			}
-
-			.form-check {
-				margin-top: 10px;
-				display: inline-block;
-				padding-right: 10px;
-				/* float: left; */
-			}
-
-			.slider #ex8Slider .slider-selection {
-				background: #BABABA;
-			}
-
-			.slider {
-				padding: 15px;
-			}
-
-			.slider label {
-				font-weight: bold;
-			}
-
-			.bottom {
-				margin-top: 10px;
-				width: 100%;
-				background: #cbcbcb;
-				padding-top: 5px;
-				height: 50%;
-				overflow-y: scroll;
-			}
-
-			ul {
-				/* text-align: center; */
-				text-decoration: none;
-				list-style-type: none;
-				padding: 0;
-			}
-
-			.bottom li a {
-				display: block;
-				text-align: left;
-				padding: 10px;
-				margin-bottom: 2px;
-				background: white
-					/* margin: 0 auto; */
-					/* background: white; */
-			}
-
-			.bottom a {
-				/* text-align: center; */
-				color: black;
-				/* background: white; */
-			}
-
-			.bottom a i.fa.fa-angle-right {
-				float: right;
-				line-height: 1.2em;
-				font-size: 25px;
-				padding-right: 10px;
-			}
-			 .BotAlert {
-            border: 1px solid black;
-            width: 45%;
-            height: 30%;
-            padding: 23px;
-            margin: 0 auto;
-            background: white;
-            margin-bottom: 10px;
-            margin-right: 10px;
-            float: left;
-        }
-
-
-			.rightTop {
-				background: #efefef;
-				padding: 18px;
-				margin-left: -25px;
-			}
-
-			.node {
-				cursor: pointer;
-			}
-
-			.node circle {
-				fill: #fff;
-				stroke: steelblue;
-				stroke-width: 1.5px;
-			}
-
-			.node text {
-				font: 10px sans-serif;
-			}
-
-			.link {
-				fill: none;
-				stroke: #ccc;
-				stroke-width: 1.5px;
-			}
-
-			.individualPlayer {
-				width: 70%;
-				margin: 0 auto;
-				padding: 10px;
-				background: white;
-			}
-
-			body {
-				background: #f7f8f9;
-			}
-
-			.table {
-				width: 100%;
-				margin: 0 auto;
-				display: block;
-			}
-
-			table {
-				width: 100%;
-				margin: 0 auto;
-			}
-
-			td {
-				width: 20%;
-				text-align: center;
-				background: #f7f8f9;
-			}
-			
-		</style>
+		
 	</head>
 
 	<body>
@@ -226,7 +46,7 @@
 		<div class="container-fluid">
 			<div class="mainContainer">
 				<div class="row">
-					<div class="col-md-5">
+					<div class="col-md-3">
 						<div class="top">
 							<div class="search">
 								<label>search</label>
@@ -267,10 +87,7 @@
 								<label>Filter option</label>
 								<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
 							</div>
-							<div class="well">
-								<label>Filter option</label>
-								<input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
-							</div>
+							
 
 						</div>
 						<div class="bottom">
@@ -332,7 +149,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-7">
+					<div class="col-md-6">
 						<div class="rightTop">
 							<div class="PlayerName">
 								<p> Player Name :<span> pp_phenomenon_07</span></p>
@@ -396,6 +213,167 @@ Dont Allow... - Investigated on 13-OCT-09
 </div> -->
 						</div>
 					</div>
+					<div class="col-md-3">
+                    <div class="widgets">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bottomRight">
+                                    <div class="header">
+                                        <span class="statistics"> Statistics</span>
+                                        <span class="date">Last 30 Days</span>
+                                    </div>
+                                    <div class="middleBottomRight">
+                                        <div class="handsPlayed">
+                                            <span>Hands played</span>
+                                        </div>
+                                        <div class="statisticGraph">
+                                            <div class="statistic-alert">
+                                                <svg id="doNut1" width="130" height="130"></svg>
+                                                <script src="script-as.js"></script>
+                                            </div>
+                                            <div class="count">
+                                                <span>20</span>
+                                                <div class="gameType">
+                                                    <ul>
+                                                        <li class="cashGame">
+                                                            Cash Game
+                                                        </li>
+                                                        <li class="sit">
+                                                            Sit & Go
+                                                        </li>
+                                                        <li class="tournament">
+                                                            Tournament
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="middleBottomBottom">
+                                        <div class="bestHand">
+                                            <span>
+                                                    Best Hand
+                                                </span>
+                                        </div>
+                                        <div class="cardsdisplay">
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                        </div>
+                                        <div class="cardType">
+                                            <span>pair</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bottomRightFinance">
+                                    <div class="financeheader">
+                                        <a href="player-statistics.html"> <span>FinancialInfo</span></a>
+                                    </div>
+                                    <div class="values">
+                                        <div class="loading spin-1" data-text='TotalcashOut $1503.50'>
+                                            <!-- <span class="checkout">TotalcashOut<br>$1503.50</span> -->
+                                            <div class="loading spin-2" data-text='TotalDepositAmt $1423.50'>
+                                                <!-- <span class="deposite">TotalDepositAmt<br>$1503.50</span> -->
+                                                <div class="loading spin-3" data-text='TotalRakeAmt $503.50'>
+                                                    <!-- <span class="rake">TotalRakeAmt<br>$1503.50</span> -->
+                                                    <div class="loading spin-4" data-text='TotalwinAmt $150.50'>
+                                                        <!-- <span class="win">TotalwinAmt<br>$1503.50</span> -->
+                                                        <div class="loading spin-5" data-text='TotalBetAmt $103.50'>
+                                                            <div class="loading spin-6" data-text='AccountBal $153.50'>
+                                                                <!-- <span class="total">account Bal<br>$1653.50</span> -->
+                                                            </div>
+                                                            <span class="Bet">TotalAccountBal<br>$153.50</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="personalInfo">
+                                    <div class="personalHeader">
+                                        <span>Personal Info</span>
+                                    </div>
+                                    <div class="channel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table">
+                                                    <table class="FinanceInfo">
+                                                        <tr>
+                                                            <th>
+                                                                IPInfo
+                                                            </th>
+                                                            <th>
+                                                                Channel
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                AR
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                Mac
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 				</div>
 			</div>
 		</div>
