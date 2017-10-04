@@ -747,9 +747,9 @@ div#cirsm1 {
 /* side content */
 
 .mainContainer {
-	width: 80%;
+	width: 86%;
 	margin: 80px auto;
-	padding: 20px;
+	padding: 0px;
 	background: #dedede;
 }
 
@@ -812,12 +812,13 @@ i.fa.fa-filter {
 }
 
 .bottom {
-	margin-top: 10px;
+	/*margin-top: 10px;*/
 	width: 100%;
 	background: #cbcbcb;
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 	height: 50%;
 	overflow-y: scroll;
+  border-top: 1px solid #cccccc;
 }
 
 ul {
@@ -1243,4 +1244,9 @@ td {
 
 .animation {
   /*background-color: white;*/
+}
+
+.widgets {
+  width: 100%;
+  float: left;
 }
