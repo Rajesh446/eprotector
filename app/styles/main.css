@@ -1229,12 +1229,14 @@ td {
 
 .animation {
   position: relative;
+  top: 55px;
+  left: 2px;
 }
 
 .animation-container {
   position: absolute;
-  top: 70px;
-  left: 185px;
+  top: 75px;
+  left: 222px;
   background: white;
 }
 
