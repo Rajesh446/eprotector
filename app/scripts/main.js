@@ -598,6 +598,12 @@ window.$(function() {
     .attr('width', width)
     .attr('height', height);
 
+  svg.append('circle')
+    .attr('cx', 240)
+    .attr('cy', 125)
+    .attr('r', 115)
+    .attr('fill', '#dedede');
+
   svg.selectAll('.arc')
     .data(arcs(data0, data1))
     .enter().append('g')
