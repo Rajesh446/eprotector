@@ -536,7 +536,7 @@ window.$(function() {
   var slide_count = 0;
 
   function startAnimation() {
-    if(slider_two_focus) {
+    if (slider_two_focus) {
       slider_two_focus = false;
       $('.a-slider-2').css({
         'opacity': 0.2
@@ -683,3 +683,19 @@ window.$(function() {
     };
   }
 })(window.d3_3);
+
+$(function() {
+  var i = 1;
+  setInterval(function() {
+    var prevClass = '.anim-' + (i - 1) + '> a';
+    $('.ball').removeClass('ball-a-' + (i - 1) + '');
+    if (i === 7) {
+      i = 1;
+    }
+    var nextClass = '.anim-' + (i) + '> a';
+    $(prevClass).removeClass('active');
+    $(nextClass).addClass('active');
+    $('.ball').addClass('ball-a-' + i + '');
+    i++;
+  }, 2000);
+});

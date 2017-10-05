@@ -1350,3 +1350,22 @@ td {
     opacity: 0;
   }
 }
+
+.ball-a-1:before {
+  background-image: url("../images/icons/1.png");
+}
+.ball-a-2:before {
+  background-image: url("../images/icons/2.png");
+}
+.ball-a-3:before {
+  background-image: url("../images/icons/3.png");
+}
+.ball-a-4:before {
+  background-image: url("../images/icons/4.png");
+}
+.ball-a-5:before {
+  background-image: url("../images/icons/5.png");
+}
+.ball-a-6:before {
+  background-image: url("../images/icons/6.png");
+}
