@@ -331,7 +331,7 @@ td {
     text-align: center;
 }
 .rulesTable td {
-    width: 20%;
+    width: 30%;
     text-align: center;
     background: #f7f8f9;
     padding: 10px 0;
@@ -400,4 +400,17 @@ div#nav-tabContent {
 .bottomContent span.custom-control-indicator {
     background: white;
     border: 1px solid;
+}
+.actedOn th {
+    text-align: center;
+}
+.actedOn td {
+    width: 20%;
+    text-align: center;
+    background: #f7f8f9;
+    padding: 10px 0;
+}
+.actedOn tr.spacing {
+    height: 5px;
+    width: 100%;
 }

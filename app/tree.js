@@ -76,7 +76,21 @@ var nodeUpdate = node.transition()
 
 nodeUpdate.select("circle")
   .attr("r", 4.5)
-  .style("fill", function(d) { return d._children ? "lightsteelblue" : "#5bc336"; });
+  // .style("fill", function(d) { return d._children ? "lightsteelblue" : "#5bc336"; });
+  .style("fill", function(d) {
+    if(d.type == "str") return "white";
+    if(d.name == "pokerauto212") return "green";
+    if(d.name == "pokerauto448") return "green";
+    if(d.name == "pokerauto312") return "green";
+    if(d.name == "pokerauto402") return "green";
+    if(d.name == "pokerauto151") return "green";
+    if(d.name == "pokerauto399") return "green";
+    if(d.name == "pokerauto235") return "green";
+    if(d.name == "pokerauto645") return "green";
+    if(d.name == "pokerauto545") return "green";
+    if(d.name == "pokerauto446") return "green";
+    
+  });
 
 nodeUpdate.select("text")
   .style("fill-opacity", 1);
