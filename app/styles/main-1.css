@@ -1299,3 +1299,11 @@ td {
   width: 100%;
   float: left;
 }
+#particles-js,#particles-js2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 360px;
+}
+
