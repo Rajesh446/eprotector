@@ -28,6 +28,16 @@
 </head>
 
 <body>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script>
+		  window.d3_3 = d3;
+		  d3 = null;
+		</script>
+			<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script>
+		  console.log(d3.version);
+		  console.log(d3_3.version);
+		</script>
 	<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">					
@@ -678,16 +688,16 @@
 
 
 </body>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$("#tree").hide();
 	$(".player").click(function () {
 		$("#tree").show();
 
 	});
 
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$('#ex1').slider({
 		formatter: function (value) {
 			return 'Current value: ' + value;
@@ -699,7 +709,7 @@
 		}
 	});
 
-</script>
+</script> -->
 <script>
 	$(".actionState").hide();
 	$("#checkbox1").click(function () {
