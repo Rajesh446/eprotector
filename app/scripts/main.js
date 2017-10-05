@@ -538,16 +538,26 @@ window.$(function() {
   function startAnimation() {
     if(slider_two_focus) {
       slider_two_focus = false;
-      $('.a-slider').show();
+      $('.a-slider-2').css({
+        'opacity': 0.2
+      });
+      $('.a-slider-1').css({
+        'opacity': 1
+      });
     }
     if (slider_one_focus) {
-      $('.a-slider').animate({
+      $('.a-slider-1').animate({
         left: '-=100'
       }, 250, function() {
         slide_count++;
-        console.log('Slider one:' + slide_count);
         if (slide_count === 3) {
-          $('.a-slider').hide().css({'left' : 0 + 'px'});
+          $('.a-slider-2').css({
+            'opacity': 1
+          });
+          $('.a-slider-1').css({
+            'opacity': 0,
+            'left': 100 + 'px'
+          });
           slide_count = 0;
           slider_two_focus = true;
         }
@@ -555,6 +565,7 @@ window.$(function() {
     }
 
     setTimeout(function() {
+      // debugger;
       startAnimation();
     }, 1000);
   }
@@ -655,7 +666,7 @@ window.$(function() {
         };
       }));
 
-    setTimeout(function() { transition(!state); }, 3000);
+    // setTimeout(function() { transition(!state); }, 3000);
   }
 
   function tweenArc(b) {
@@ -666,41 +677,3 @@ window.$(function() {
     };
   }
 })(window.d3_3);
-
-// (function(d3) {
-//   var circles = [];
-//   var min = 0;
-//   var max = 4;
-//   var colors = ['grey', 'orange', 'red', 'blue'];
-//
-//   for (var i = 0; i < 100; i++) {
-//     circles.push(colors[(Math.round(Math.random() * (max - min) + min)) % 4]);
-//   }
-//   var svg = d3.select('.circle-animation-block')
-//     .append('svg')
-//     .style('position', 'absolute')
-//     .style('top', '0')
-//     .style('left', '0')
-//     .append('g');
-//   //
-//
-//   console.log(circles);
-//
-//   svg.selectAll('circle')
-//     .data(circles)
-//     .enter()
-//     .append('circle')
-//     .attr('cx', function(d, i) {
-//       return (500 * Math.random() + i * 2);
-//     })
-//     .attr('cy', function(d, i) {
-//       return (400 * Math.random() + i * 2);
-//     })
-//     .attr('r', function() {
-//       return 5;
-//     })
-//     .attr('fill', function(d) {
-//       return d;
-//     });
-//
-// })(window.d3);
