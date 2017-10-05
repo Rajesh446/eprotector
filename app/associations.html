@@ -10,7 +10,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
     <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="styles/main.css">
@@ -19,6 +19,17 @@
 </head>
 
 <body>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script>
+          window.d3_3 = d3;
+          d3 = null;
+        </script>
+            debugger;
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script>
+          console.log(d3.version);
+          console.log(d3_3.version);
+        </script>
 	<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
@@ -416,6 +427,7 @@
         $(".widgets").show();
 
     });
+    
 
     $('.loading').mouseenter(function (e) {
         console.log(e);
@@ -435,5 +447,6 @@
     })
 
 </script>
+ 
 
 </html>

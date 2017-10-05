@@ -5,12 +5,12 @@
 }
 
 
-
+/* 
 td {
     width: 20%;
     text-align: center;
     background: #f7f8f9;
-}
+} */
 
 .rightMiddle .container {
     width: 100%;
@@ -340,6 +340,10 @@ td {
     height: 5px;
     width: 100%;
 }
+.FinanceInfo tr.spacing {
+    height: 5px;
+    width: 100%;
+}
 .innerNavBar {
     margin-top: 5px;
     width: 100%;
@@ -413,4 +417,51 @@ div#nav-tabContent {
 .actedOn tr.spacing {
     height: 5px;
     width: 100%;
+}
+.aboveBoard th {
+    text-align: center;
+}
+.aboveBoard tr.spacing {
+    height: 5px;
+    width: 100%;
+}
+.aboveBoard td {
+    width: 25%;
+    text-align: center;
+    background: #f7f8f9;
+    padding: 10px 0;
+}
+.aboveBoard td.comment {
+    position: relative;
+    cursor: pointer;
+    /* display: inline-block;
+    border-bottom: 1px dotted black; */
+}
+
+.aboveBoard td.comment .riskComment {
+    visibility: hidden;
+    width: 300px;
+    background-color: #f7f8f9;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.aboveBoard td.comment .riskComment::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #f7f8f9 transparent transparent;
+}
+.aboveBoard td.comment:hover .riskComment {
+    visibility: visible;
 }

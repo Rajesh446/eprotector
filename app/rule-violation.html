@@ -441,50 +441,61 @@
 						<div class="tab-pane fade" id="nav-abaord" role="tabpanel" aria-labelledby="nav-abaord-tab">
 							<div class="row">
 								<div class="col-md-12">
-									<div class="rulesTable">
+									<div class="aboveBoard">
 										<table>
 											<tr>
 												<th>RuleID</th>
 												<th>Time</th>
-												<th>comment</th>
 												<th>AgentName</th>
 												<th>ActionTaken</th>
+												<th>comment</th>
 
 											</tr>
 											<tr class="spacing"></tr>
 											<tr>
 												<td>8452971065</td>
 												<td>22/7/2014</td>
-												<td>verified</td>
 												<td>Risk23</td>
 												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/7/2014</td>
+												<td>Risk23</td>
+												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
 
 											</tr>
 											<tr class="spacing"></tr>
 											<tr>
 												<td>8452971065</td>
 												<td>22/7/2014</td>
-												<td>verified</td>
 												<td>Risk23</td>
 												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
 
 											</tr>
 											<tr class="spacing"></tr>
 											<tr>
 												<td>8452971065</td>
 												<td>22/7/2014</td>
-												<td>verified</td>
 												<td>Risk23</td>
 												<td>UnBlocked</td>
-
-											</tr>
-											<tr class="spacing"></tr>
-											<tr>
-												<td>8452971065</td>
-												<td>22/7/2014</td>
-												<td>verified</td>
-												<td>Risk23</td>
-												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
 
 											</tr>
 										</table>
@@ -611,6 +622,7 @@
 															<td>
 																VC
 															</td>
+															<tr class="spacing"></tr>
 														</tr>
 														<tr>
 															<td>
@@ -620,6 +632,7 @@
 																AR
 															</td>
 														</tr>
+														<tr class="spacing"></tr>
 														<tr>
 															<td>
 																10.153.251.43
@@ -628,6 +641,7 @@
 																Mac
 															</td>
 														</tr>
+														<tr class="spacing"></tr>
 														<tr>
 															<td>
 																10.153.251.43
@@ -636,6 +650,7 @@
 																VC
 															</td>
 														</tr>
+														<tr class="spacing"></tr>
 														<tr>
 															<td>
 																10.153.251.43
@@ -690,6 +705,22 @@
 	$("#checkbox1").click(function () {
 		$(".actionState").show();
 	})
+	$('.loading').mouseenter(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        return false;
+    })
+
+    $('.loading').mouseleave(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        // $('.Bet').empty();
+        return false;
+    })
 
 </script>
 

@@ -1,8 +1,7 @@
 
 var data = [30, 40, 50]
 var r = 50;
-var pi = function(cssSelector){    
-    
+var pi = function(d3, cssSelector){    
     var canvas = d3.select(cssSelector)
         .append("svg")
         .attr("width", 200)
@@ -28,8 +27,8 @@ var pi = function(cssSelector){
     //     .attr("transform", "translate(-15,5)")//function (d) { return "translate(" + arc.centroid(d) + ")"; })
     //     .text(function (d) { return d.data; })
     //     .attr("font-size","30");
-    }
-    pi("#doNut1" );
-    pi("#doNut2");
-    pi("#doNut3");
-    pi("#doNut4");
+    };
+    pi(window.d3_3, "#doNut1" );
+    pi(window.d3_3, "#doNut2");
+    pi(window.d3_3, "#doNut3");
+    pi(window.d3_3, "#doNut4");

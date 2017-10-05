@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="asscociation.css">
+		<link rel="stylesheet" href="rules-violation.css">
 
 
 
@@ -330,7 +331,8 @@ Dont Allow... - Investigated on 13-OCT-09
                                                             <td>
                                                                 VC
                                                             </td>
-                                                        </tr>
+														</tr>
+														<tr class="spacing"></tr>
                                                         <tr>
                                                             <td>
                                                                 10.153.251.43
@@ -338,7 +340,8 @@ Dont Allow... - Investigated on 13-OCT-09
                                                             <td>
                                                                 AR
                                                             </td>
-                                                        </tr>
+														</tr>
+														<tr class="spacing"></tr>
                                                         <tr>
                                                             <td>
                                                                 10.153.251.43
@@ -346,7 +349,8 @@ Dont Allow... - Investigated on 13-OCT-09
                                                             <td>
                                                                 Mac
                                                             </td>
-                                                        </tr>
+														</tr>
+														<tr class="spacing"></tr>
                                                         <tr>
                                                             <td>
                                                                 10.153.251.43
@@ -354,7 +358,8 @@ Dont Allow... - Investigated on 13-OCT-09
                                                             <td>
                                                                 VC
                                                             </td>
-                                                        </tr>
+														</tr>
+														<tr class="spacing"></tr>
                                                         <tr>
                                                             <td>
                                                                 10.153.251.43
@@ -389,10 +394,26 @@ Dont Allow... - Investigated on 13-OCT-09
 					return 'Current value: ' + value;
 				}
 			});
+			$('.loading').mouseenter(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        return false;
+    })
+
+    $('.loading').mouseleave(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        // $('.Bet').empty();
+        return false;
+    })
 
 
 		</script>
-		<script type="text/javascript">
+		<!-- <script type="text/javascript">
 			$("#tree").hide();
 			$(".widgets").hide();
 			$(".player").click(function () {
@@ -401,7 +422,7 @@ Dont Allow... - Investigated on 13-OCT-09
 
 			});
 
-		</script>
+		</script> -->
 
 
 	</body>

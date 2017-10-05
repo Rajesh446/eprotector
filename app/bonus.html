@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="asscociation.css">
+		<link rel="stylesheet" href="rules-violation.css">
 
 
 
@@ -19,7 +20,7 @@
 				crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>
-		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
 		<!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
 		<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 		<style>
@@ -101,6 +102,16 @@
 	</head>
 
 	<body>
+			<script src="https://d3js.org/d3.v3.min.js"></script>
+			<script>
+			  window.d3_3 = d3;
+			  d3 = null;
+			</script>
+				<script src="https://d3js.org/d3.v4.min.js"></script>
+			<script>
+			  console.log(d3.version);
+			  console.log(d3_3.version);
+			</script>
 		<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">					
@@ -386,6 +397,7 @@
 																	VC
 																</td>
 															</tr>
+															<tr class="spacing"></tr>
 															<tr>
 																<td>
 																	10.153.251.43
@@ -394,6 +406,7 @@
 																	AR
 																</td>
 															</tr>
+															<tr class="spacing"></tr>
 															<tr>
 																<td>
 																	10.153.251.43
@@ -402,6 +415,7 @@
 																	Mac
 																</td>
 															</tr>
+															<tr class="spacing"></tr>
 															<tr>
 																<td>
 																	10.153.251.43
@@ -410,6 +424,7 @@
 																	VC
 																</td>
 															</tr>
+															<tr class="spacing"></tr>
 															<tr>
 																<td>
 																	10.153.251.43
@@ -707,6 +722,22 @@
 				$(".widgets").show();
 
 			});
+			$('.loading').mouseenter(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        return false;
+    })
+
+    $('.loading').mouseleave(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        // $('.Bet').empty();
+        return false;
+    })
 
 		</script>
 
@@ -724,6 +755,7 @@
 
 
 		</script>
+		
 
 	</body>
 

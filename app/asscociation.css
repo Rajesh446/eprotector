@@ -390,7 +390,8 @@
     float: left;
 }
 .personalInfo .channel .table th {
-	border-top: none;
+    border-top: none;
+    text-align: center;
 }
 
 .brand {
