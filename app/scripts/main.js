@@ -666,7 +666,7 @@ window.$(function() {
         };
       }));
 
-    // setTimeout(function() { transition(!state); }, 3000);
+    setTimeout(function() { transition(!state); }, 3000);
   }
 
   function tweenArc(b) {
