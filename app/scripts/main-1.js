@@ -38,3 +38,19 @@ window.$(function() {
     slideBeforeScan();
   }, 1000);
 });
+
+$(function() {
+  var i = 1;
+  setInterval(function() {
+    var prevClass = '.anim-' + (i - 1) + '> a';
+    $('.ball').removeClass('ball-a-' + (i - 1) + '');
+    if (i === 7) {
+      i = 1;
+    }
+    var nextClass = '.anim-' + (i) + '> a';
+    $(prevClass).removeClass('active');
+    $(nextClass).addClass('active');
+    $('.ball').addClass('ball-a-' + i + '');
+    i++;
+  }, 2000);
+});
